@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema; 
 const ObjectId = mongoose.Types.ObjectId;
 console.log("connect to db");
-mongoose.connect("mongodb+srv://muneeb07:Kurulusosman@cluster0.sayvb3v.mongodb.net/courseSelling-app")
+
+// mongoose.connect("mongodb+srv://muneeb07:Kurulusosman@cluster0.sayvb3v.mongodb.net/courseSelling-app") ==> 
 
 const userSchema = new Schema({
     email: {type: String, unique: true },
